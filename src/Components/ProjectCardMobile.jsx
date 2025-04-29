@@ -41,7 +41,7 @@ const ProjectCardMobile = () => {
           Starts At
         </div>
         <div className="text-2xl font-bold text-black mt-1">
-          ₹ 42 Lacs<sup className="text-sm">*</sup>
+          ₹ 50.84 Lacs<sup className="text-sm">*</sup>
         </div>
         <div className="text-sm text-gray-500 mt-1">Onwards</div>
       </div>

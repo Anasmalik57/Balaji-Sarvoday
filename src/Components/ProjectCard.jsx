@@ -24,7 +24,7 @@ const ProjectCard = () => {
         <div className="mt-4 text-sm text-gray-600">
           Apartments <span className="font-bold text-black">1 & 2 & 3 BHK</span> Starts At
         </div>
-        <div className="text-2xl font-bold text-black mt-1">₹ 42 Lacs<sup className="text-sm">*</sup></div>
+        <div className="text-2xl font-bold text-black mt-1">₹ 50.84 Lacs<sup className="text-sm">*</sup></div>
         <div className="text-sm text-gray-500 mt-1">Onwards</div>
       </div>
     </div>
