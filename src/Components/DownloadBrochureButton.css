@@ -1,0 +1,77 @@
+/* Define the metallic shine animation for the button */
+@keyframes metallicShine {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 200%;
+  }
+}
+
+.metallic-shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.metallic-shine::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.6) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-25deg);
+  animation: metallicShine 2s infinite;
+}
+
+/* Bounce animation for the icon */
+@keyframes bounceIcon {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.bounce-icon {
+  animation: bounceIcon 1.5s infinite;
+}
+
+/* Button hover effect (scaling effect) */
+button:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Button structure */
+button.relative {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Ensure the shine layer is styled properly inside button */
+button .metallic-shine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: -1;
+}
